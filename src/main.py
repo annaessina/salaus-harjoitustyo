@@ -2,17 +2,17 @@
 #This function encrypts given message (empty at this moment)
 def encrypt(message):
 
-    return message
+    return message_encrypted
 
 #This function decrypts given message (empty at this moment)
 def decrypt(message):
 
-    return message
+    return message_decrypted
 
 
 # Start
 def start():
- 
+    #User interface (terminal)
     print("This program encrypts and decrypts messages using RSA algorithm.\n")
     print("Choose an option below: \n")
     print("To generate public and private keys, type in 1")
