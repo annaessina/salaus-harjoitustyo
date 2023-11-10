@@ -1,5 +1,4 @@
 
-![GHA workflow badge](https://github.com/annaessina/salaus-harjoitustyo/workflows/CI/badge.svg)
 
 # Salaus-harjoitustyo
 
