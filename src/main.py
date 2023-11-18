@@ -1,67 +1,76 @@
+import math, random
 
-#This function encrypts given message (empty at this moment)
-def encrypt(message):
+# Numbers for p and q will be choosen randomly. Since p and q should be prime numbers,
+# we have to check whether randomly found number is a prime number
+def checkIfPrimeNumber(num):
+    if num < 2:
+        return False
+    for i in range(2, num // 2 + 1):
+        if num % i == 0:
+            return False
+    return True
 
-    return message_encrypted
+# Generating prime number
+def primeNumberGeneration(num1, num2):
+    primeNumber = random.randint(num1, num2)  
+    while not checkIfPrimeNumber(primeNumber):
+        primeNumber = random.randint(num1, num2)
+    return primeNumber
 
-#This function decrypts given message (empty at this moment)
-def decrypt(message):
+# Calculating d
+def calculateD(e, phi):
+    for d in range(3, phi):
+        if (d * e) % phi == 1:
+            return d
 
-    return message_decrypted
+# Generating p and q
+p = primeNumberGeneration(2, 10000)
+q = primeNumberGeneration(2, 10000)
+
+# Calculating n
+n = p * q
+
+#Calculating phi(n) = (p-1)*(q-1)
+phi = (p-1)*(q-1)
+
+# Choosing e
+e = random.randint(3, phi-1)
+while math.gcd(e, phi) != 1:
+    e = random.randint(3, phi - 1)
 
 
-# Start
-def start():
-    #User interface (terminal)
-    print("This program encrypts and decrypts messages using RSA algorithm.\n")
-    print("Choose an option below: \n")
-    print("To generate public and private keys, type in 1")
-    print("To encrypt message from terminal, type in 2")
-    print("To decrypt message from terminal, type in 3")
-    print("To encrypt message from file, type in 4")
-    print("To decrypt message from file, type in 5")
+d = calculateD(e, phi)
 
-    while True:
+print("For your information: ")
+print("Prime number p =", p)
+print("Prime number q =", q)
+print("n = p * q =", n)
+print("Phi(n) = (p-1) * (q-1) =", phi)
+print("e =", e)
+print("d =", d)
+print("RSA public key pair (e, n):", e, n)
+print("RSA private key pair (d, n):", d, n)
 
-        # Get selection from user
-        option = input()
 
-        # Generate public and private keys
-        if option == "1":
-            print()
+print("\nType in message to encrypt: ")
+message = input()
 
-        # Encrypt message from terminal
-        elif option == "2":
-            print()
+print("\nYou typed in message to encrypt:", message)
 
-        # Decrypt message from terminal
-        elif option == "3":
-            print()
+# Converting each character into ASCII code
+message_encoded = [ord(ch) for ch in message]
 
-        # Encrypt message from file
-        elif option == "4":
-            print()
+# Encrypting message (m ^ e) mod n = c
+c = [pow(ch, e, n) for ch in message_encoded]
 
-        # Decrypt message from file
-        elif option == "5":
-            print()
+print("\nYour message in encrypted form (on character by character basis):", c)
 
-        # Check, if input is invalid
-        else:
-            print("Such option does not exist\n")
+#Decrypting encrypted message (m ^ d) mod n = m_encoded
+m_encoded = [pow(ch, d, n) for ch in c]
+message2 = "".join(chr(ch) for ch in m_encoded)
 
-        # Option to exit  
-        print("Make another choice?\n\
-        'y' to continue, 'n' to exit\n")
-        quit = input()  
+print("\nYour message decrypted from encrypted form above:", message2)
 
-        # If 'y' is chosen
-        if quit == "y":
-            continue
-        # If 'n' is chosen
-        else:
-            break
 
- 
-if __name__ == "__main__":
-    start()
+
+
