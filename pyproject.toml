@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Anna Essina <anna.essina@helsinki.fi>"]
 readme = "README.md"
-packages = [{include = "salaus_harjoitustyo"}]
+
 
 [tool.poetry.dependencies]
 python = "^3.10"
