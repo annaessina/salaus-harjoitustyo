@@ -1,19 +1,37 @@
 import math, random
 
-# Numbers for p and q will be choosen randomly. Since p and q should be prime numbers,
-# we have to check whether randomly found number is a prime number
-def checkIfPrimeNumber(num):
-    if num < 2:
-        return False
-    for i in range(2, num // 2 + 1):
-        if num % i == 0:
+#Miller-Rabin primality test on whether randomly found number is a prime number
+def checkIfPrimeNumberMillerRabin(n):
+ 
+    s = 0
+    k = n-1
+
+    while k%2==0:
+        k>>=1
+        s+=1
+    assert(2**s * k == n-1)
+ 
+    def checkIfComposite(a):
+        if pow(a, k, n) == 1:
             return False
+        for i in range(s):
+            if pow(a, 2**i * k, n) == n-1:
+                return False
+        return True  
+ 
+    for i in range(10):
+        a = random.randrange(2, n)
+        if checkIfComposite(a):
+            return False
+ 
     return True
+ 
 
 # Generating prime number
 def primeNumberGeneration(num1, num2):
     primeNumber = random.randint(num1, num2)  
-    while not checkIfPrimeNumber(primeNumber):
+    #while not checkIfPrimeNumber(primeNumber):
+    while not checkIfPrimeNumberMillerRabin(primeNumber):
         primeNumber = random.randint(num1, num2)
     return primeNumber
 
@@ -70,6 +88,11 @@ m_encoded = [pow(ch, d, n) for ch in c]
 message2 = "".join(chr(ch) for ch in m_encoded)
 
 print("\nYour message decrypted from encrypted form above:", message2)
+
+
+
+
+
 
 
 
