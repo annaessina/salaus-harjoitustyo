@@ -16,3 +16,4 @@
 
 [Viikkoraportti 4](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/viikkoraportti4.md)
 
+[Viikkoraportti 5](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/viikkoraportti5.md)
