@@ -1,6 +1,8 @@
+
 import math, random
 
 #Miller-Rabin primality test on whether randomly found number is a prime number
+ 
 def checkIfPrimeNumberMillerRabin(n):
  
     s = 0
@@ -19,7 +21,7 @@ def checkIfPrimeNumberMillerRabin(n):
                 return False
         return True  
  
-    for i in range(10):
+    for i in range(40):
         a = random.randrange(2, n)
         if checkIfComposite(a):
             return False
@@ -30,7 +32,6 @@ def checkIfPrimeNumberMillerRabin(n):
 # Generating prime number
 def primeNumberGeneration(num1, num2):
     primeNumber = random.randint(num1, num2)  
-    #while not checkIfPrimeNumber(primeNumber):
     while not checkIfPrimeNumberMillerRabin(primeNumber):
         primeNumber = random.randint(num1, num2)
     return primeNumber
@@ -42,8 +43,8 @@ def calculateD(e, phi):
             return d
 
 # Generating p and q
-p = primeNumberGeneration(2, 10000)
-q = primeNumberGeneration(2, 10000)
+p = primeNumberGeneration(2**1278, 2**2282)
+q = primeNumberGeneration(2**1278, 2**2282)
 
 # Calculating n
 n = p * q
@@ -88,12 +89,4 @@ m_encoded = [pow(ch, d, n) for ch in c]
 message2 = "".join(chr(ch) for ch in m_encoded)
 
 print("\nYour message decrypted from encrypted form above:", message2)
-
-
-
-
-
-
-
-
-
+ 
