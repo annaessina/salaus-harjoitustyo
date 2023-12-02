@@ -10,6 +10,6 @@ Tällä viikolla:
 
 - Testataksesi toimintoa primeNumberGeneration(num1,num2), käytin samaa väliä 21278 ja 22282.
 
-- Ensi viikolla laajennan vielä hieman sovelluksen toimintoja ja käyttöliittymää.
+- Ensi viikolla laajennan vielä hieman sovelluksen toimintoja ja käyttöliittymää. Teen myös toisen vertaisarvioinnin.
 
 Käytetyt tunnit 12h
