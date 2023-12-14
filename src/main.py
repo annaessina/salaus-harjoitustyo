@@ -1,5 +1,9 @@
 import math, random
 
+# Lisää tämä koodi muiden funktioiden yläpuolelle
+def get_user_input():
+    return input()
+
 # Numbers for p and q will be choosen randomly. Since p and q should be prime numbers,
 # we have to check whether randomly found number is a prime number
 def checkIfPrimeNumber(num):
@@ -111,7 +115,7 @@ print("RSA private key pair (d, n):", d, n)
 
 
 print("\nType in message to encrypt: ")
-message = input()
+message = get_user_input()
 
 print("\nYou typed in message to encrypt:", message)
 
