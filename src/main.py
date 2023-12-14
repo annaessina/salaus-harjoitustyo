@@ -75,8 +75,8 @@ def calculateD(e, phi):
             return d
 
 # Generating p and q
-p = primeNumberGeneration(2**1278, 2**2282)
-q = primeNumberGeneration(2**1278, 2**2282)
+p = primeNumberGeneration(2, 10000)
+q = primeNumberGeneration(2, 10000)
 
 # Calculating n
 n = p * q
