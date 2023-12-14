@@ -1,7 +1,5 @@
-from unittest.mock import patch
 import unittest
-from main import calculate_gcd, calculateD, checkIfPrimeNumber, checkIfPrimeNumberMillerRabin, primeNumberGeneration, get_user_input
-
+from main import calculate_gcd, calculateD, checkIfPrimeNumber, checkIfPrimeNumberMillerRabin, primeNumberGeneration
 
 class TestCalculateGCD(unittest.TestCase):
     def test_calculate_gcd(self):
@@ -21,7 +19,6 @@ class TestCalculateD(unittest.TestCase):
         self.assertEqual(calculateD(7, 20), 3)  
 
 class TestCheckIfPrimeNumber(unittest.TestCase):
-    
     def test_checkIfPrimeNumber(self):
         self.assertTrue(checkIfPrimeNumber(7))
         self.assertFalse(checkIfPrimeNumber(10))  
@@ -39,12 +36,11 @@ class TestCheckIfPrimeNumberMillerRabin(unittest.TestCase):
         self.assertTrue(checkIfPrimeNumberMillerRabin(7919))  
 
 class TestPrimeNumberGeneration(unittest.TestCase):
-    @patch('builtins.input', side_effect=['lol'])
-    def test_primeNumberGeneration(self, mock_input):
-        # Mocking user input for the test
+    def test_primeNumberGeneration(self):
         result = primeNumberGeneration(2**1278, 2**2282)
         self.assertTrue(checkIfPrimeNumberMillerRabin(result))
-        result2 = primeNumberGeneration(50, 100)
+        result2 = primeNumberGeneration(50, 100)  
         self.assertTrue(checkIfPrimeNumberMillerRabin(result2))
-        result3 = primeNumberGeneration(10000, 20000)
+        result3 = primeNumberGeneration(10000, 20000)  
         self.assertTrue(checkIfPrimeNumberMillerRabin(result3))
+
