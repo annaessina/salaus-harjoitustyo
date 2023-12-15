@@ -1,4 +1,7 @@
 ![GHA workflow badge](https://github.com/annaessina/salaus-harjoitustyo/workflows/CI/badge.svg)
+[![codecov](https://app.codecov.io/gh/annaessina/salaus-harjoitustyo/tree/main/src)
+
+
 
 # Salaus-harjoitustyo
 
