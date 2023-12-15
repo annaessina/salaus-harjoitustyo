@@ -3,7 +3,7 @@ from calculate_gcd import calculate_gcd
 from calculateD import calculateD
 from checkIfPrimeNumber import checkIfPrimeNumber
 from checkIfPrimeNumberMillerRabin import checkIfPrimeNumberMillerRabin
-#from primeNumberGeneration import primeNumberGeneration
+from primeNumberGeneration import primeNumberGeneration
 
 class TestCalculateGCD(unittest.TestCase):
     def test_calculate_gcd(self):
@@ -40,3 +40,13 @@ class TestCheckIfPrimeNumberMillerRabin(unittest.TestCase):
         self.assertFalse(checkIfPrimeNumberMillerRabin(1001))  
         self.assertTrue(checkIfPrimeNumberMillerRabin(7919))  
 
+class TestPrimeNumberGeneration(unittest.TestCase):
+    def test_primeNumberGeneration(self):
+        result = primeNumberGeneration(2, 10000)
+        self.assertTrue(checkIfPrimeNumberMillerRabin(result))
+        result2 = primeNumberGeneration(50, 100)  
+        self.assertTrue(checkIfPrimeNumberMillerRabin(result2))
+        result3 = primeNumberGeneration(10000, 20000)  
+        self.assertTrue(checkIfPrimeNumberMillerRabin(result3)) 
+
+        
