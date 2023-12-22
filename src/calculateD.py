@@ -1,4 +1,4 @@
- # Calculating d that is the modular multiplicative inverse of e modulo λ(n).
+# Calculating d that is the modular multiplicative inverse of e modulo λ(n).
 # a and b are coprimes, i.e., gcd(a, b) = 1.
 
 def calculateD(a, b):
@@ -18,4 +18,4 @@ def calculateD(a, b):
     if (x < 0):
         x = x + temp
  
-    returnx
+    return x
