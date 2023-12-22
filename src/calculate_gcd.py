@@ -1,5 +1,11 @@
- # Calculating gcd using Euclidean algorithm
+ # Calculating great common divisor (gcd) using extended Euclidean algorithm.
+
 def calculate_gcd(a, b):
-    while(b):
-       a, b = b, a % b
-    return abs(a) 
+  if b == 0:  
+    return(a)
+  else:  
+    while b > 0:
+      r = a - b * (a // b)
+      a, b = b, r
+    return(a)
+
