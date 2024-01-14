@@ -7,3 +7,5 @@ Lähteet
 https://fi.wikipedia.org/wiki/RSA
 
 Opinto-ohjelmani on tietojenkäsittelytieteen kandidaatti (TKT). Projektin kieli on suomi.
+
+Jatkan kesken jäänyttä projektia.
