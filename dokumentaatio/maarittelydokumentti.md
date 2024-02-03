@@ -6,6 +6,22 @@ Ohjelma saa syötteinä tekstiä, kuvia ja tietokantoja. Ensin syötteet salataa
 Lähteet
 https://fi.wikipedia.org/wiki/RSA
 
+https://en.wikipedia.org/wiki/RSA_(cryptosystem)
+
+https://en.wikipedia.org/wiki/Modular_multiplicative_inverse
+
+https://en.wikipedia.org/wiki/Least_common_multiple
+
+https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm
+
+https://www.mersenne.org/primes/
+
+https://crypto.stackexchange.com/questions/5889/calculating-rsa-private-exponent-when-given-public-exponent-and-the-modulus-fact
+
+https://en.wikipedia.org/wiki/Miller–Rabin_primality_test
+ 
+
+
 Opinto-ohjelmani on tietojenkäsittelytieteen kandidaatti (TKT). Projektin kieli on suomi.
 
 Jatkan kesken jäänyttä projektia.
