@@ -1,4 +1,3 @@
-
 import unittest
 from calculate_gcd import calculate_gcd
 from calculateD import calculateD
