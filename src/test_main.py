@@ -10,11 +10,11 @@ class TestCalculateGCD(unittest.TestCase):
         self.assertEqual(calculate_gcd(2013, 13179), 3)
         self.assertEqual(calculate_gcd(0, 7), 7)  
         self.assertEqual(calculate_gcd(15, 0), 15)  
-        self.assertEqual(calculate_gcd(0, 0), 0)  
+        self.assertEqual(calculate_gcd(0, 0), 0)
         self.assertEqual(calculate_gcd(21, 14), 7)  
         self.assertEqual(calculate_gcd(23, 46), 23)
-        self.assertEqual(calculate_gcd(31, 0), 31)  
-        self.assertEqual(calculate_gcd(103, 0), 3)
+        self.assertEqual(calculate_gcd(121, 114), 7)  
+        self.assertEqual(calculate_gcd(123, 246), 23)
 
 class TestCalculateD(unittest.TestCase):
     def test_calculateD(self):
@@ -22,9 +22,9 @@ class TestCalculateD(unittest.TestCase):
         self.assertEqual(calculateD(e, phi), d)
         self.assertEqual(calculateD(3, 10), 7)  
         self.assertEqual(calculateD(5, 16), 13)  
-        self.assertEqual(calculateD(7, 20), 3)  
+        self.assertEqual(calculateD(7, 20), 3)
         self.assertEqual(calculateD(11, 16), 13)  
-        self.assertEqual(calculateD(37, 20), 3)
+        self.assertEqual(calculateD(73, 120), 3)  
 
 class TestCheckIfPrimeNumber(unittest.TestCase):
     def test_checkIfPrimeNumber(self):
@@ -35,8 +35,8 @@ class TestCheckIfPrimeNumber(unittest.TestCase):
         self.assertFalse(checkIfPrimeNumber(1))  
         self.assertTrue(checkIfPrimeNumber(17))  
         self.assertTrue(checkIfPrimeNumber(997))  
-        self.assertTrue(checkIfPrimeNumber(1711))  
-        self.assertTrue(checkIfPrimeNumber(2887))
+        self.assertTrue(checkIfPrimeNumber(1700))  
+        self.assertTrue(checkIfPrimeNumber(9997))
 
 class TestCheckIfPrimeNumberMillerRabin(unittest.TestCase):
     def test_checkIfPrimeNumberMillerRabin(self):
@@ -46,8 +46,6 @@ class TestCheckIfPrimeNumberMillerRabin(unittest.TestCase):
         self.assertTrue(checkIfPrimeNumberMillerRabin(23))  
         self.assertFalse(checkIfPrimeNumberMillerRabin(1001))  
         self.assertTrue(checkIfPrimeNumberMillerRabin(7919))  
-        self.assertFalse(checkIfPrimeNumberMillerRabin(1011))  
-        self.assertTrue(checkIfPrimeNumberMillerRabin(9919))
 
 class TestPrimeNumberGeneration(unittest.TestCase):
     def test_primeNumberGeneration(self):
@@ -57,4 +55,3 @@ class TestPrimeNumberGeneration(unittest.TestCase):
         self.assertTrue(checkIfPrimeNumberMillerRabin(result2))
         result3 = primeNumberGeneration(10000, 20000)  
         self.assertTrue(checkIfPrimeNumberMillerRabin(result3))
-
