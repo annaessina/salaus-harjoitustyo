@@ -13,8 +13,8 @@ class TestCalculateGCD(unittest.TestCase):
         self.assertEqual(calculate_gcd(0, 0), 0)
         self.assertEqual(calculate_gcd(21, 14), 7)  
         self.assertEqual(calculate_gcd(23, 46), 23)
-        self.assertEqual(calculate_gcd(121, 114), 7)  
-        self.assertEqual(calculate_gcd(123, 246), 23)
+        self.assertEqual(calculate_gcd(121, 114), 1)  
+        self.assertEqual(calculate_gcd(123, 246), 123)
 
 class TestCalculateD(unittest.TestCase):
     def test_calculateD(self):
@@ -23,8 +23,8 @@ class TestCalculateD(unittest.TestCase):
         self.assertEqual(calculateD(3, 10), 7)  
         self.assertEqual(calculateD(5, 16), 13)  
         self.assertEqual(calculateD(7, 20), 3)
-        self.assertEqual(calculateD(11, 16), 13)  
-        self.assertEqual(calculateD(73, 120), 3)  
+        self.assertEqual(calculateD(11, 16), 3)  
+        self.assertEqual(calculateD(73, 120), 97)  
 
 class TestCheckIfPrimeNumber(unittest.TestCase):
     def test_checkIfPrimeNumber(self):
@@ -35,8 +35,8 @@ class TestCheckIfPrimeNumber(unittest.TestCase):
         self.assertFalse(checkIfPrimeNumber(1))  
         self.assertTrue(checkIfPrimeNumber(17))  
         self.assertTrue(checkIfPrimeNumber(997))  
-        self.assertTrue(checkIfPrimeNumber(1700))  
-        self.assertTrue(checkIfPrimeNumber(9997))
+        self.assertTrue(checkIfPrimeNumber(47))  
+        self.assertTrue(checkIfPrimeNumber(73))
 
 class TestCheckIfPrimeNumberMillerRabin(unittest.TestCase):
     def test_checkIfPrimeNumberMillerRabin(self):
