@@ -41,34 +41,40 @@ def main():
 
     # User interface
     print("For your information: ")
-    print("Prime number p =", p)
-    print("Prime number q =", q)
-    print("Computed n = p * q =", n)
-    print("Computed λ(n) = lcm(p-1, q-1) =", λ)
-    print("Choosen an integer e =", e)
-    print("Determined d =", d)
-    print("RSA public key pair (e, n):", e, n)
-    print("RSA private key pair (d, n):", d, n)
+    print("\nPrime number p =", p)
+    print("\nPrime number q =", q)
+    print("\nCalculated n = p * q =", n)
+    print("\nCalculated λ(n) = lcm(p-1, q-1) =", λ)
+    print("\nChoosen an integer e =", e)
+    print("\nCalculated d =", d)
+    print("\nRSA public key pair (e, n):", e, n)
+    print("\nRSA private key pair (d, n):", d, n)
 
 
     print("\nType in message to encrypt: ")
-    message = input()
+    message_to_encrypt = input()   # initial message to encrypt
 
-    print("\nYou typed in message to encrypt:", message)
+    print("\nYou typed in message to encrypt:", message_to_encrypt)
 
     # Converting each character into ASCII code
-    message_encoded = [ord(ch) for ch in message]
+    message_ASCII = [ord(ch) for ch in message_to_encrypt]
 
-    # Encrypting message (m ^ e) mod n = c
-    c = [pow(ch, e, n) for ch in message_encoded]
+    # Encrypting message (m ^ e) mod n = message_ASCII
+    message_encrypted = [pow(ch, e, n) for ch in message_ASCII]
 
-    print("\nYour message in encrypted form (on character by character basis):", c)
+    print("\nYour message in encrypted form (every character is encrypted and presented in digital form):", message_encrypted)
 
-    #Decrypting encrypted message (m ^ d) mod n = m_encoded
-    m_encoded = [pow(ch, d, n) for ch in c]
-    message2 = "".join(chr(ch) for ch in m_encoded)
+    print("\nEncryption operation is finished.")
 
-    print("\nYour message decrypted from encrypted form above:", message2)
+    # Decrypting encrypted message (m ^ d) mod n = message_decrypted_intoASCII
+    message_decrypted_intoASCII = [pow(ch, d, n) for ch in message_encrypted]
+
+    # Converting each character from ASCII code
+    message_decrypted = "".join(chr(ch) for ch in message_decrypted_intoASCII)
+
+    print("\nYour message decrypted from encrypted form:", message_decrypted)
+
+    print("\nDecryption operation is finished.")
 
 
 if __name__ == "__main__":
