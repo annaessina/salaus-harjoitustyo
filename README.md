@@ -21,7 +21,7 @@
 
 ## Käyttöohje
 
-1. Kloonaa projekti ja mene siihen
+1. Kloonaa projekti
 
 2. Asenna riippuvuudet komennolla
 
