@@ -19,7 +19,7 @@
 [Viikkoraportti 4](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/viikkoraportti4.md)
 
 
-# Käyttöohje
+## Käyttöohje
 
 Asenna riippuvuudet komennolla
 
