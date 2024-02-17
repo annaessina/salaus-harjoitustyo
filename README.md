@@ -19,4 +19,23 @@
 [Viikkoraportti 4](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/viikkoraportti4.md)
 
 
+# Käyttöohje
+
+Asenna riippuvuudet komennolla
+
+```
+poetry install
+```
+Käynnistä ohjelma komennolla
+
+```
+poetry run invoke start
+```
+
+Testit voidaan halutessaan suorittaa komennolla
+
+```
+poetry run invoke test
+```
+
 
