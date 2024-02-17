@@ -21,18 +21,20 @@
 
 ## Käyttöohje
 
-Asenna riippuvuudet komennolla
+1. Kloonaa projekti ja mene siihen
+
+2. Asenna riippuvuudet komennolla
 
 ```
 poetry install
 ```
-Käynnistä ohjelma komennolla
+3. Käynnistä ohjelma komennolla
 
 ```
 poetry run invoke start
 ```
 
-Testit voidaan halutessaan suorittaa komennolla
+4. Testit voidaan suorittaa komennolla
 
 ```
 poetry run invoke test
