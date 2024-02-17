@@ -7,6 +7,7 @@
   - Testifunktio test_primeNumberGeneration() sisältää nyt testin laajennetulle alueelle 2 ** 1023:sta 2 ** 1024:ään.
   - Testit menevät läpi.
 
+- Päivitin käyttöohjeet README:hin.
 - Tein myös vertaisarvioinnin.
 -  Ensi viikolla parannan ainakin dokumentaatiota, esimerkiksi luon testaukselle oman.
 
