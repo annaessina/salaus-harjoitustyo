@@ -12,6 +12,8 @@
 
 [Testausdokumentti](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/testausdokumentti.md)
 
+[Käyttöohje](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/kayttoohje.md)
+
 [Viikkoraportti 1](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/viikkoraportti1.md)
 
 [Viikkoraportti 2](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/viikkoraportti2.md)
@@ -25,25 +27,5 @@
 [Viikkoraportti 6](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/viikkoraportti6.md)
 
 
-## Käyttöohje
-
-1. Kloonaa projekti
-
-2. Asenna riippuvuudet komennolla
-
-```
-poetry install
-```
-3. Käynnistä ohjelma komennolla
-
-```
-poetry run invoke start
-```
-
-4. Testit voidaan suorittaa komennolla
-
-```
-poetry run invoke test
-```
 
 
