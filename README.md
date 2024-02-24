@@ -10,6 +10,8 @@
 
 [Määrittelydokumentti](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/maarittelydokumentti.md)
 
+[Testausdokumentti](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/testausdokumentti.md)
+
 [Viikkoraportti 1](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/viikkoraportti1.md)
 
 [Viikkoraportti 2](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/viikkoraportti2.md)
