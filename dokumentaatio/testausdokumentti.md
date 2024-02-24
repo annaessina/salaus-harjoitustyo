@@ -37,3 +37,10 @@ Komentoriville testikattavuusraportin saa:
 ```bash
 poetry run coverage report -m
 ```
+
+## Raportti
+
+https://app.codecov.io/gh/annaessina/salaus-harjoitustyo
+
+poetry run coverage report -m
+```
