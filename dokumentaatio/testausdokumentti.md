@@ -19,3 +19,21 @@ sekä niiden tulo M(1279) * M(2203).
 
 Tämä testi tarkistaa primeNumberGeneration() - funktion oikean alkuluvun löytämiseksi annetulla alueella.
 Useita erilaisia syötteitä syötetään, mukaan lukien alue, jossa on suuria lukuja 2 ** 1023: sta 2 ** 1024: ään.
+
+## Testaus ohjeet 
+
+Yksikkötestit saa ajettua komennolla:
+
+```bash
+ poetry run coverage run --branch -m pytest src
+```
+Testikattavuusraportin saa:
+
+```bash
+poetry run coverage html
+```
+Komentoriville testikattavuusraportin saa:
+
+```bash
+poetry run coverage report -m
+```
