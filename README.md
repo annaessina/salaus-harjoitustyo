@@ -22,6 +22,8 @@
 
 [Viikkoraportti 5](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/viikkoraportti5.md)
 
+[Viikkoraportti 6](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/viikkoraportti6.md)
+
 
 ## Käyttöohje
 
