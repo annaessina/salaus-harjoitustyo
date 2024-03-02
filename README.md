@@ -10,11 +10,11 @@
 
 [Määrittelydokumentti](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/maarittelydokumentti.md)
 
+[Toteutusdokumentti](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/toteutusdokumentti.md)
+
 [Testausdokumentti](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/testausdokumentti.md)
 
 [Käyttöohje](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/kayttoohje.md)
-
-[Toteutusdokumentti](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/toteutusdokumentti.md)
 
 [Viikkoraportit](https://github.com/annaessina/salaus-harjoitustyo/tree/main/dokumentaatio/viikkoraportit)
 
