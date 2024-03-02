@@ -14,6 +14,8 @@
 
 [Käyttöohje](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/kayttoohje.md)
 
+[Toteutusdokumentti](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/toteutusdokumentti.md)
+
 [Viikkoraportti 1](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/viikkoraportti1.md)
 
 [Viikkoraportti 2](https://github.com/annaessina/salaus-harjoitustyo/blob/main/dokumentaatio/viikkoraportti2.md)
