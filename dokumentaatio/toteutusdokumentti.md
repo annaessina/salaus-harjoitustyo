@@ -20,7 +20,7 @@ RSA-algoritmi generoi julkisen ja yksityisen avaimen seuraavasti:
 - Laajennettu Eukleideen algoritmi laskee suurimman yhteisen jaollisen lisäksi Bézout'n identiteetin kertoimet x ja y. Sen aikavaativuus on O(log min(a, b)), missä a ja b ovat annetut kokonaisluvut.
 
 ## Parannuksia
-Graafisen käyttöliittymän lisääminen voi parantaa ohjelman käyttökokemusta.
+Graafisen käyttöliittymän lisääminen voi parantaa ohjelman käyttökokemusta. Ohjelmaa voisi kehittää myös niin, että se pystyisi salamaan muutakin kun vain tekstiä.
 
 
 
