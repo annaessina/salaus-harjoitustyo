@@ -1,7 +1,7 @@
 # Toteutusdokumentti
 ## Projekti
 
-Projektin tavoitteena on kehittää Python-ohjelma, joka käyttää RSA-salausalgoritmia viestien salauksessa ja purkamisessa.
+Projektin tavoitteena oli kehittää Python-ohjelma, joka käyttää RSA-salausalgoritmia viestien salauksessa ja purkamisessa.
 
 RSA:ssa käyttäjä luo julkisen avaimen kahdesta suuresta alkuluvusta, pitäen nämä luvut salaisina. Viestit voidaan salata kuka tahansa julkisen avaimen avulla, mutta vain ne, jotka tuntevat yksityisen avaimen, voivat purkaa ne. Salaus perustuu suurten alkulukujen tulojen hajottamisen vaikeuteen, tunnettuna "hajotelmaprobleemina".
 
