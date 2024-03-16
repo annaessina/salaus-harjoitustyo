@@ -35,3 +35,6 @@ https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test
 Laajennettu Eukleideen algoritmi
 https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm
 
+## Laajat kielimallit
+
+Tässä projektissa käytin ChatGPT:tä aiheen teorian etsimiseen.
